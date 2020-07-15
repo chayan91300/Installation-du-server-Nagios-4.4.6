@@ -71,7 +71,7 @@ Si vous souhaitez utiliser le thème Nagios classique, exécutez:
 ```
 sudo make install-classicui 
 ```
-Étape 5: créer un utilisateur Web Nagios
+Étape 5: Créer un utilisateur Web Nagios
 
 Un utilisateur est requis pour accéder à la console Web de Nagios.
 ```
