@@ -82,7 +82,7 @@ sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 ```
 Le htpasswd a été utilisé pour générer le mot de passe et l'écrire dans le fichier /usr/local/nagios/etc/htpasswd.users 
 
-Étape 6: installer les plugins Nagios sur Ubuntu 20.04
+Étape 6: Installer les plugins Nagios sur Ubuntu 20.04
 
 Les plugins Nagios sont utilisés pour étendre les fonctionnalités de surveillance Nagios.
 ```
@@ -96,7 +96,7 @@ Compilez et installez les plugins Nagios en exécutant les commandes ci-dessous.
 ```
 ./configure --with-nagios-user=nagios --with-nagios-group=nagios make sudo make install 
 ```
-Étape 7: vérifier l'installation et démarrer le service Nagios
+Étape 7: Vérifier l'installation et démarrer le service Nagios
 
 Confirmez que votre installation Nagios a réussi sur la machine Ubuntu 20.04 Linux.
 ```
