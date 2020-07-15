@@ -80,7 +80,8 @@ sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
  Re-taper le nouveau mot de passe: 
  Ajout d'un mot de passe pour l'utilisateur nagiosadmin 
 ```
-Le htpasswd a été utilisé pour générer le mot de passe et l'écrire dans le fichier /usr/local/nagios/etc/htpasswd.users .
+Le htpasswd a été utilisé pour générer le mot de passe et l'écrire dans le fichier /usr/local/nagios/etc/htpasswd.users 
+
 Étape 6: installer les plugins Nagios sur Ubuntu 20.04
 
 Les plugins Nagios sont utilisés pour étendre les fonctionnalités de surveillance Nagios.
