@@ -110,7 +110,6 @@ sudo systemctl enable --now nagios
 Confirmez que le service nagios est en cours d'exécution.
 ```
 systemctl status nagios
-
 ```
 ```
  ● nagios.service - Nagios Core 4.4.6
