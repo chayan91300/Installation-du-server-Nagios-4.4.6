@@ -100,9 +100,9 @@ Confirmez que votre installation Nagios a réussi sur la machine Ubuntu 20.04 Li
 sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg 
 ```
 Vous devriez obtenir une sortie similaire à celle ci-dessous si l'installation de Nagios a réussi.
-
+```
  Nagios Core 4.4.6 Copyright (c) 2009-present Nagios Core Development Team and Community Contributors Copyright (c) 1999-2009 Ethan Galstad Last Modified: 2020-04-28 License: GPL Website: https://www.nagios.org Reading configuration data... Read main config file okay... Read object config files okay... Running pre-flight check on configuration data... Checking objects... Checked 8 services. Checked 1 hosts. Checked 1 host groups. Checked 0 service groups. Checked 1 contacts. Checked 1 contact groups. Checked 24 commands. Checked 5 time periods. Checked 0 host escalations. Checked 0 service escalations. Checking for circular paths... Checked 1 hosts Checked 0 service dependencies Checked 0 host dependencies Checked 5 timeperiods Checking global event handlers... Checking obsessive compulsive processor commands... Checking misc settings... Total Warnings: 0 Total Errors: 0 Things look okay - No serious problems were detected during the pre-flight check 
-
+```
 Démarrez et activez le service nagios pour démarrer au démarrage.
 ```
 sudo systemctl enable --now nagios 
@@ -110,6 +110,8 @@ sudo systemctl enable --now nagios
 Confirmez que le service nagios est en cours d'exécution.
 ```
 systemctl status nagios
+
+```
 ```
  ● nagios.service - Nagios Core 4.4.6
  Chargé: chargé (/lib/systemd/system/nagios.service; activé; préréglage du fournisseur: activé)
@@ -137,7 +139,7 @@ systemctl status nagios
  17 mai 16:45:23 ubuntu20 nagios [35010]: wproc: demande de registre: nom = Core Worker 35012; pid = 35012
  17 mai 16:45:23 ubuntu20 nagios [35010]: wproc: demande de registre: nom = Core Worker 35011; pid = 35011
  17 mai 16:45:24 ubuntu20 nagios [35010]: Lanceur de fichier de commande lancé avec succès avec pid 35030 
-
+```
 Étape 8: Accéder au tableau de bord Web de Nagios
 
 si vous avez un pare-feu ufw, autorisez les ports http et https pour le trafic entrant.
